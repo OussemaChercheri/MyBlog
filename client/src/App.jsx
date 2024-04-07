@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import About from './pages/About';
+import Dashboard from './pages/Dashboard';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
 import SignIn from './pages/SignIn';
@@ -19,6 +20,7 @@ export default function App() {
         <Route path='/sign-in' element={<SignIn />} />
         <Route path='/sign-up' element={<SignUp />} />
         <Route path='/projects' element={<Projects />} />
+        <Route path='/dashboard' element={<Dashboard />} />
       </Routes>
       <Footer />
     </BrowserRouter>
