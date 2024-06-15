@@ -8,7 +8,8 @@ import userRoutes from "./routes/user.route.js";
 dotenv.config();
 
 mongoose
-  .connect(process.env.MONGO)
+  //.connect(process.env.MONGO)
+  .connect("mongodb://localhost:27017/blogs")
   .then(() => {
     console.log("database connected");
   })
